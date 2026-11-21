@@ -25,14 +25,14 @@ import {
 } from "react-router-dom";
 
 import { supabase } from "./lib/supabase";
-import Login from "./pages/Login";
-import AdminDashboard from "./admin/AdminDashboard.jsx";
+import Login from "./pages/login.jsx";
+import AdminDashboard from "./admin/adminDashboard.jsx";
 import Register from "./pages/Register.jsx";
 import Checkout from "./pages/checkout.jsx";
-import CustomerLogin from "./pages/CustomerLogin.jsx";
+import CustomerLogin from "./pages/customerlogin.jsx";
 import Cart from "./pages/Cart.jsx";
-import ServiceRequest from "./pages/ServiceRequest.jsx";
-import CustomerDashboard from "./pages/CustomerDashboard.jsx";
+import ServiceRequest from "./pages/servicerequest.jsx";
+import CustomerDashboard from "./pages/customerdashboard.jsx";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
