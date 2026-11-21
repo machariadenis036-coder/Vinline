@@ -1,0 +1,1163 @@
+.vin-admin {
+  min-height: 100vh;
+  display: flex;
+  background: #f3f6fb;
+  color: #17243a;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.vin-sidebar {
+  width: 255px;
+  min-width: 255px;
+  min-height: 100vh;
+  background: #10294b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 16px;
+}
+
+.vin-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 5px 30px;
+  border-bottom: 1px solid #294363;
+}
+
+.vin-brand-mark {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #10294b;
+  background: #e8b84c;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.vin-brand strong,
+.vin-brand span {
+  display: block;
+}
+
+.vin-brand strong {
+  font-size: 14px;
+  letter-spacing: .4px;
+}
+
+.vin-brand span {
+  color: #a9bdd6;
+  font-size: 10px;
+  margin-top: 5px;
+  letter-spacing: 1.2px;
+}
+
+.vin-menu-label {
+  color: #8fa8c5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 29px 12px 12px;
+}
+
+.vin-nav {
+  display: grid;
+  gap: 7px;
+}
+
+.vin-nav button {
+  border: 0;
+  background: transparent;
+  color: #c5d2e2;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 13px 12px;
+  border-radius: 8px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.vin-nav button:hover,
+.vin-nav button.active {
+  background: #21466f;
+  color: white;
+}
+
+.vin-nav button.active {
+  box-shadow: inset 3px 0 #e8b84c;
+}
+
+.vin-nav-count {
+  margin-left: auto;
+  background: #d97736;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 7px;
+  font-size: 10px;
+}
+
+.vin-sidebar-bottom {
+  margin-top: auto;
+}
+
+.vin-sidebar-note {
+  background: #1a3a60;
+  border: 1px solid #345575;
+  border-radius: 9px;
+  padding: 14px;
+}
+
+.vin-sidebar-note strong,
+.vin-sidebar-note span {
+  display: block;
+}
+
+.vin-sidebar-note strong {
+  font-size: 12px;
+}
+
+.vin-sidebar-note span {
+  font-size: 11px;
+  color: #b5c5d8;
+  line-height: 1.5;
+  margin-top: 6px;
+}
+
+.vin-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.vin-topbar {
+  min-height: 88px;
+  background: white;
+  border-bottom: 1px solid #e6ebf2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 32px;
+}
+
+.vin-top-left {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.vin-eyebrow {
+  color: #8190a5;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.vin-topbar h1 {
+  margin: 5px 0 0;
+  font-size: 23px;
+  color: #172d4b;
+}
+
+.vin-refresh,
+.vin-secondary,
+.vin-primary,
+.vin-text-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 10px 14px;
+}
+
+.vin-refresh,
+.vin-secondary {
+  color: #34506e;
+  background: white;
+  border: 1px solid #dbe3ed;
+}
+
+.vin-primary {
+  background: #174a80;
+  color: white;
+  border: 1px solid #174a80;
+}
+
+.vin-primary:hover {
+  background: #10375f;
+}
+
+.vin-secondary:hover,
+.vin-refresh:hover {
+  background: #f1f5fa;
+}
+
+.vin-refresh:disabled,
+.vin-primary:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.vin-content {
+  padding: 27px 32px 45px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.vin-alert {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fff5df;
+  border: 1px solid #f1d59b;
+  color: #77520c;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 12px;
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+}
+
+.vin-alert button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.vin-loading,
+.vin-empty {
+  text-align: center;
+  padding: 55px 15px;
+  color: #8090a5;
+  font-size: 13px;
+}
+
+.vin-empty svg {
+  color: #aab8c9;
+}
+
+.vin-empty p {
+  margin: 10px 0 0;
+}
+
+.vin-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 23px;
+}
+
+.vin-welcome h2 {
+  font-size: 20px;
+  margin: 0 0 7px;
+  color: #183554;
+}
+
+.vin-welcome p {
+  font-size: 12px;
+  color: #8290a3;
+  margin: 0;
+}
+
+.vin-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #21845b;
+  font-size: 11px;
+  background: #e8f7ef;
+  padding: 8px 11px;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+
+.vin-live i {
+  width: 7px;
+  height: 7px;
+  background: #25a36d;
+  border-radius: 50%;
+}
+
+.vin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.vin-stat-card {
+  background: white;
+  border: 1px solid #e8edf4;
+  border-radius: 10px;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 3px 12px #1d355508;
+}
+
+.vin-stat-icon,
+.vin-round-icon,
+.vin-attention-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: #eaf1fa;
+  color: #28629b;
+}
+
+.vin-stat-card span,
+.vin-stat-card strong {
+  display: block;
+}
+
+.vin-stat-card span {
+  font-size: 11px;
+  color: #8290a3;
+  margin-bottom: 6px;
+}
+
+.vin-stat-card strong {
+  font-size: 23px;
+  color: #1b3555;
+}
+
+.vin-overview-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.vin-panel {
+  background: white;
+  border: 1px solid #e7edf4;
+  border-radius: 10px;
+  padding: 21px;
+  box-shadow: 0 3px 12px #1d355505;
+  min-width: 0;
+}
+
+.vin-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.vin-panel-heading h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #1b3555;
+}
+
+.vin-panel-heading p {
+  margin: 5px 0 0;
+  color: #8996a8;
+  font-size: 11px;
+}
+
+.vin-text-button {
+  background: transparent;
+  border: 0;
+  color: #28629b;
+  padding: 6px;
+}
+
+.vin-compact-list {
+  display: grid;
+}
+
+.vin-compact-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.vin-compact-row:last-child {
+  border-bottom: 0;
+}
+
+.vin-round-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.vin-compact-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.vin-compact-info strong,
+.vin-compact-info span,
+.vin-compact-right strong {
+  display: block;
+}
+
+.vin-compact-info strong {
+  font-size: 12px;
+}
+
+.vin-compact-info span {
+  color: #8996a8;
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.vin-compact-right {
+  text-align: right;
+}
+
+.vin-compact-right strong {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.vin-status {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+  background: #fff2d9;
+  color: #98630d;
+  white-space: nowrap;
+}
+
+.vin-status-approved,
+.vin-status-active,
+.vin-status-delivered,
+.vin-status-completed {
+  background: #e5f6ed;
+  color: #218151;
+}
+
+.vin-status-processing,
+.vin-status-ready {
+  background: #e8f1ff;
+  color: #2865a4;
+}
+
+.vin-status-rejected,
+.vin-status-cancelled,
+.vin-status-inactive {
+  background: #ffebeb;
+  color: #b34444;
+}
+
+.vin-attention {
+  display: grid;
+}
+
+.vin-attention button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #edf1f5;
+  padding: 13px 0;
+  background: transparent;
+  cursor: pointer;
+  color: #233b58;
+}
+
+.vin-attention button:last-child {
+  border-bottom: 0;
+}
+
+.vin-attention button > span:nth-child(2) {
+  flex: 1;
+}
+
+.vin-attention strong,
+.vin-attention small {
+  display: block;
+}
+
+.vin-attention strong {
+  font-size: 12px;
+}
+
+.vin-attention small {
+  color: #8996a8;
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.vin-arrow {
+  color: #7e91a9;
+  font-size: 22px;
+}
+
+.vin-quick-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.vin-quick-actions .vin-panel-heading {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.vin-quick-actions > button {
+  border: 1px solid #dfe7f0;
+  background: #f8fafd;
+  color: #315477;
+  border-radius: 7px;
+  padding: 11px 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.vin-quick-actions > button:hover {
+  background: #edf4fb;
+}
+
+.vin-heading-wrap {
+  flex-wrap: wrap;
+}
+
+.vin-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #8190a5;
+  font-size: 11px;
+}
+
+.vin-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #dfe6ef;
+  border-radius: 7px;
+  padding: 0 11px;
+  max-width: 350px;
+  width: 100%;
+  color: #8797aa;
+}
+
+.vin-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 11px 0;
+  background: transparent;
+  color: #243b56;
+  font-size: 12px;
+}
+
+.vin-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.vin-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 11px;
+  min-width: 760px;
+}
+
+.vin-table th {
+  background: #f7f9fc;
+  color: #77879b;
+  font-weight: 700;
+  padding: 12px 11px;
+  white-space: nowrap;
+}
+
+.vin-table td {
+  border-bottom: 1px solid #edf1f5;
+  padding: 13px 11px;
+  color: #43556c;
+  vertical-align: middle;
+}
+
+.vin-table tbody tr:hover {
+  background: #fbfcfe;
+}
+
+.vin-product-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 190px;
+}
+
+.vin-product-cell img,
+.vin-no-image {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  object-fit: cover;
+  background: #edf2f8;
+}
+
+.vin-no-image {
+  display: grid;
+  place-items: center;
+  color: #8394a9;
+}
+
+.vin-product-cell strong,
+.vin-product-cell small {
+  display: block;
+  max-width: 220px;
+}
+
+.vin-product-cell strong {
+  color: #263d59;
+  font-size: 11px;
+}
+
+.vin-product-cell small {
+  color: #91a0b1;
+  font-size: 10px;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vin-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.vin-actions button {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  border: 1px solid #dfe7f0;
+  background: white;
+  color: #3b648f;
+  cursor: pointer;
+}
+
+.vin-actions button:hover {
+  background: #edf4fb;
+}
+
+.vin-actions .vin-danger-icon,
+.vin-actions .vin-reject {
+  color: #b64c4c;
+}
+
+.vin-actions .vin-approve {
+  color: #238453;
+}
+
+.vin-actions button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.vin-muted {
+  color: #8996a8;
+  font-size: 10px;
+}
+
+.vin-order-list {
+  display: grid;
+  gap: 13px;
+}
+
+.vin-order-card {
+  border: 1px solid #e7edf4;
+  border-radius: 9px;
+  padding: 16px;
+  background: #fff;
+}
+
+.vin-order-top,
+.vin-order-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.vin-order-top {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.vin-order-top strong,
+.vin-order-top span {
+  display: block;
+}
+
+.vin-order-top strong {
+  color: #213b5a;
+  font-size: 12px;
+}
+
+.vin-order-top span {
+  color: #8996a8;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.vin-order-customer {
+  padding: 12px 0;
+}
+
+.vin-order-customer strong,
+.vin-order-customer span {
+  display: block;
+}
+
+.vin-order-customer strong {
+  font-size: 12px;
+  color: #29425f;
+}
+
+.vin-order-customer span {
+  font-size: 10px;
+  color: #8291a4;
+  margin-top: 5px;
+}
+
+.vin-order-items {
+  background: #f7f9fc;
+  border-radius: 7px;
+  padding: 10px 12px;
+}
+
+.vin-order-items > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  color: #5b6e84;
+  font-size: 11px;
+}
+
+.vin-order-items strong {
+  color: #304965;
+  white-space: nowrap;
+}
+
+.vin-order-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+  padding: 12px 0;
+  color: #718198;
+  font-size: 10px;
+}
+
+.vin-order-meta strong {
+  color: #1c3e61;
+}
+
+.vin-payment-inline {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  border-top: 1px solid #edf1f5;
+  padding: 10px 0;
+  color: #708198;
+  font-size: 10px;
+}
+
+.vin-order-bottom {
+  border-top: 1px solid #edf1f5;
+  padding-top: 12px;
+  flex-wrap: wrap;
+}
+
+.vin-order-bottom label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #718198;
+  font-size: 10px;
+}
+
+.vin-order-bottom select,
+.vin-modal input,
+.vin-modal textarea {
+  border: 1px solid #dce4ee;
+  border-radius: 6px;
+  background: white;
+  color: #263d59;
+  padding: 9px 10px;
+  outline: none;
+  font: inherit;
+}
+
+.vin-order-bottom select {
+  font-size: 11px;
+}
+
+.vin-request-description {
+  font-size: 11px;
+  color: #64758b;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.vin-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #0c1d32a8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.vin-modal {
+  width: 100%;
+  max-width: 590px;
+  max-height: 92vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 23px;
+  box-shadow: 0 15px 60px #08182b40;
+}
+
+.vin-modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.vin-modal-heading h2 {
+  color: #1c3858;
+  font-size: 18px;
+  margin: 0;
+}
+
+.vin-modal-heading p {
+  color: #8996a8;
+  font-size: 11px;
+  margin: 6px 0 0;
+}
+
+.vin-modal-heading > button {
+  border: 0;
+  background: transparent;
+  color: #64758b;
+  cursor: pointer;
+}
+
+.vin-modal > label {
+  display: block;
+  margin: 13px 0;
+  color: #435a75;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.vin-modal input,
+.vin-modal textarea {
+  width: 100%;
+  display: block;
+  margin-top: 7px;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.vin-modal input:focus,
+.vin-modal textarea:focus {
+  border-color: #5488bb;
+  box-shadow: 0 0 0 3px #5488bb18;
+}
+
+.vin-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.vin-form-row label {
+  color: #435a75;
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 0;
+}
+
+.vin-current-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8291a4;
+  font-size: 11px;
+  margin: 12px 0;
+}
+
+.vin-current-image img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.vin-file-picked {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #28629b;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.vin-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.vin-detail-modal {
+  max-width: 520px;
+}
+
+.vin-detail-content {
+  color: #596d84;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.vin-detail-content p {
+  margin: 8px 0;
+}
+
+.vin-detail-content strong {
+  color: #263f5e;
+}
+
+.vin-document-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 10px;
+  color: #28629b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.vin-document-link:hover {
+  text-decoration: underline;
+}
+
+.vin-mobile-menu,
+.vin-mobile-close {
+  display: none;
+}
+
+.vin-spin {
+  animation: vin-rotation 1s linear infinite;
+}
+
+@keyframes vin-rotation {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1050px) {
+  .vin-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vin-overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .vin-sidebar {
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 270px;
+    min-width: 270px;
+    transform: translateX(-105%);
+    transition: transform .22s ease;
+    box-shadow: 12px 0 35px #10294b30;
+  }
+
+  .vin-sidebar-open {
+    transform: translateX(0);
+  }
+
+  .vin-mobile-menu,
+  .vin-mobile-close {
+    display: inline-grid;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: #315477;
+    cursor: pointer;
+  }
+
+  .vin-mobile-close {
+    margin-left: auto;
+    color: white;
+  }
+
+  .vin-topbar {
+    min-height: 75px;
+    padding: 13px 16px;
+  }
+
+  .vin-topbar h1 {
+    font-size: 19px;
+  }
+
+  .vin-eyebrow {
+    font-size: 8px;
+  }
+
+  .vin-refresh {
+    padding: 9px;
+    font-size: 0;
+  }
+
+  .vin-refresh svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .vin-content {
+    padding: 19px 13px 32px;
+  }
+
+  .vin-welcome {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .vin-welcome h2 {
+    font-size: 17px;
+  }
+
+  .vin-stats {
+    gap: 10px;
+  }
+
+  .vin-stat-card {
+    padding: 13px 10px;
+    gap: 9px;
+  }
+
+  .vin-stat-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .vin-stat-icon svg {
+    width: 18px;
+  }
+
+  .vin-stat-card span {
+    font-size: 10px;
+  }
+
+  .vin-stat-card strong {
+    font-size: 19px;
+  }
+
+  .vin-panel {
+    padding: 15px 12px;
+  }
+
+  .vin-panel-heading {
+    align-items: flex-start;
+  }
+
+  .vin-panel-heading h3 {
+    font-size: 14px;
+  }
+
+  .vin-quick-actions {
+    align-items: stretch;
+  }
+
+  .vin-quick-actions > button {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .vin-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .vin-order-bottom {
+    align-items: flex-start;
+  }
+
+  .vin-order-bottom label {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .vin-order-bottom select {
+    max-width: 58%;
+  }
+
+  .vin-modal {
+    padding: 18px 15px;
+  }
+}
+
+@media (max-width: 390px) {
+  .vin-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .vin-stat-card {
+    display: block;
+  }
+
+  .vin-stat-icon {
+    margin-bottom: 9px;
+  }
+
+  .vin-order-top {
+    align-items: flex-start;
+  }
+}
