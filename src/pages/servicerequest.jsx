@@ -9,7 +9,7 @@ import {
   CheckCircle,
   AlertCircle
 } from "lucide-react";
-import "./ServiceRequest.css";
+import "./servicerequest.css";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 

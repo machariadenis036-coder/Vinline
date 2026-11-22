@@ -20,7 +20,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { supabase } from "../lib/supabase";
-import "./AdminDashboard.css";
+import "./admindashboard.css";
 
 const sections = [
   { id: "overview", label: "Overview", icon: LayoutDashboard },
@@ -286,6 +286,7 @@ export default function AdminDashboard() {
   }
 
   try {
+
   const { data: { user }, error: userError } =
     await supabase.auth.getUser();
 
