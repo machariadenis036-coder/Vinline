@@ -30,7 +30,7 @@ import AdminDashboard from "./admin/adminDashboard.jsx";
 import Register from "./pages/Register.jsx";
 import Checkout from "./pages/checkout.jsx";
 import CustomerLogin from "./pages/customerlogin.jsx";
-import Cart from "./pages/Cart.jsx";
+import Cart from "./pages/cart.jsx";
 import ServiceRequest from "./pages/servicerequest.jsx";
 import CustomerDashboard from "./pages/customerdashboard.jsx";
 
